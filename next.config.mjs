@@ -14,7 +14,10 @@ const nextConfig = {
           }/remoteEntry.js`,
         },
         filename: 'static/chunks/remoteEntry.js',
-        exposes: {},
+        exposes: {
+          './Navbar': './components/Navbar.js',
+          './Footer': './components/Footer.js',
+        },
         extraOptions: {
           debug: false, // `false` by default
           exposePages: false, // `false` by default
